@@ -13,15 +13,24 @@
             background-size: cover;
             background-position: center;
             height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding-top: 10%;
         }
 
         .centered-logo img {
             margin-top: -600px;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .brand-logo img {
+            width: 100px; /* Adjust width */
+            height: auto;  /* Maintain aspect ratio */
+            position: absolute;
+            top: 10px;    /* Move logo to the top */
+            left: 10px;   /* Align logo to the top-left */
+            z-index: 2;   /* Ensure it's above other elements */
         }
 
         .audio-controls {
@@ -36,14 +45,6 @@
 
         #volume-control {
             width: 100px;
-        }
-
-        .brand-logo img {
-            width: 100px; /* Adjust width */
-            height: auto;  /* Maintain aspect ratio */
-            display: flex;
-            position: absolute;
-            z-index: 2;   /* Ensure it's above other elements */
         }
     </style>
 </head>
