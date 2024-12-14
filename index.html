@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Foundation - Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="centered-logo">
+            <img src="assets/scp-logo.png" alt="SCP Logo" class="scp-logo spinning">
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>Civil Networks SCP-RP UK</h1>
+                <p class="subtext">“Secure. Contain. Protect.”</p>
+            </div>
+            <div class="loading">
+                <p>Establishing Secure Connection...</p>
+                <div class="loading-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="tips">
+                <p>Did you know?</p>
+                <p id="tips">The SCP Foundation houses over 3,000 anomalies across its facilities.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2024 Civil Networks SCP-RP. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- Audio Controls -->
+    <div class="audio-controls">
+        <button id="play-sound">🔊 Enable Sound</button>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+        <source src="https://drive.google.com/uc?export=download&id=1ZVagAYE9FKvNXOZO5Mr6tVeN6dmglgBC" type="audio/mpeg">
+    </audio>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

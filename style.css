@@ -1,0 +1,148 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    overflow: hidden;
+}
+
+/* Background */
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: url("assets/scp-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Centered Logo */
+.centered-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.scp-logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Spinning Animation */
+.spinning {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Glow Effect */
+.spinning {
+    animation: spin 6s linear infinite;
+    filter: drop-shadow(0 0 10px #e74c3c); /* Glowing red */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #e74c3c;
+}
+
+.subtext {
+    font-size: 1.2em;
+    color: #bdc3c7;
+}
+
+/* Loading Bar */
+.loading {
+    margin-top: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+.loading-bar {
+    position: relative;
+    width: 70%;
+    height: 20px;
+    margin: 10px auto;
+    background: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #e74c3c;
+    animation: load 10s linear infinite;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Tips Section */
+.tips {
+    margin-top: 30px;
+    text-align: center;
+    z-index: 2;
+}
+
+.tips p {
+    margin: 5px;
+}
+
+#tips {
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+/* Footer */
+.footer {
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    color: #95a5a6;
+    z-index: 2;
+}
+.audio-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.audio-controls button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.audio-controls button:hover {
+    background: #c0392b;
+}
+
