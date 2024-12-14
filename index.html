@@ -39,9 +39,11 @@
         }
 
         .brand-logo img {
-            margin-top: -500px;
-            width: 150px;
-            height: auto;  
+            width: 200px; /* Adjust width */
+            height: auto;  /* Maintain aspect ratio */
+            position: absolute;
+            top: 10px;    /* Move it to the top */
+            z-index: 2;   /* Ensure it's above other elements */
         }
     </style>
 </head>
