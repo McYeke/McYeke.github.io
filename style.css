@@ -51,7 +51,7 @@ body, html {
 /* Glow Effect */
 .spinning {
     animation: spin 6s linear infinite;
-    filter: drop-shadow(0 0 10px #e74c3c); /* Glowing red */
+    filter: drop-shadow(0 0 10px #000000);
 }
 
 /* Header */
