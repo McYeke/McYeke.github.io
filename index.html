@@ -21,8 +21,21 @@
         }
     
         .centered-logo img {
-            margin-top: -150px;  
+            margin-top: -200px;  
         }
+
+        .audio-controls {
+        position: absolute;
+        bottom: 20px;  /* Adjust bottom spacing */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    #volume-control {
+        width: 100px;
+    }
     </style>
 </head>
 <body>
@@ -53,8 +66,10 @@
 
     <!-- Audio Controls -->
     <div class="audio-controls">
-        <button id="play-sound">🔊 Enable Sound</button>
-    </div>
+        <button id="play-sound">🔊 Play</button>
+        <button id="pause-sound">⏸ Pause</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+    </div>    
 
     <!-- Background Audio -->
     <audio id="background-audio" loop>

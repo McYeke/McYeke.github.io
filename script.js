@@ -13,27 +13,29 @@ setInterval(() => {
     tipIndex = (tipIndex + 1) % tips.length;
 }, 7000);
 
+// Get audio and controls
+const audio = document.getElementById('background-audio');
+const playBtn = document.getElementById('play-sound');
+const pauseBtn = document.getElementById('pause-sound');
+const volumeControl = document.getElementById('volume-control');
+
+// Play sound
+playBtn.addEventListener('click', () => {
+    audio.play();
+});
+
+// Pause sound
+pauseBtn.addEventListener('click', () => {
+    audio.pause();
+});
+
+// Adjust volume
+volumeControl.addEventListener('input', (e) => {
+    audio.volume = e.target.value;
+});
+
 document.addEventListener('DOMContentLoaded', () => {
-    const playSoundButton = document.getElementById('play-sound');
-    const audio = document.getElementById('background-audio');
-
-    if (playSoundButton) {
-        playSoundButton.addEventListener('click', () => {
-            audio.play()
-                .then(() => {
-                    // Hide the button after audio starts playing
-                    playSoundButton.style.display = 'none';
-                })
-                .catch(error => {
-                    console.error("Audio playback failed:", error);
-                });
-        });
-    } else {
-        console.error("Play sound button not found in the DOM.");
-    }
-
     if (!audio) {
         console.error("Background audio element not found in the DOM.");
     }
 });
-

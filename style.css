@@ -125,24 +125,4 @@ h1 {
     color: #95a5a6;
     z-index: 2;
 }
-.audio-controls {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
-}
-
-.audio-controls button {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.audio-controls button:hover {
-    background: #c0392b;
-}
 
