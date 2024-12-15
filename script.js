@@ -1,10 +1,10 @@
 // Rotating Tips
 const tips = [
-    "The SCP Foundation contains over 3,000 anomalies worldwide.",
+    "10/12 was a dark day for Site-65",
     "SCP-173 moves only when you aren't looking at it.",
-    "Always follow your Site Director's orders.",
-    "Civil Networks: Where immersion meets professionalism.",
-    "Roleplay with respect and stay in character!"
+    "Yeke wrote all this with AI assisting to help him learn?",
+    "This Community was founded in 2013!",
+    "Our server requires you to stay in character"
 ];
 
 let tipIndex = 0;
