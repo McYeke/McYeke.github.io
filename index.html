@@ -52,37 +52,31 @@
             width: 100px;
         }
 
-        .terminal-style {
-            font-family: 'Orbitron', sans-serif;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            width: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
         .loading-bar {
             width: 100%;
-            background: #444;
-            border: 2px solid #333;
-            border-radius: 5px;
+            background-color: #ddd;
+            border-radius: 10px;
             overflow: hidden;
         }
 
         .progress {
             width: 0;
-            height: 10px;
-            background: linear-gradient(90deg, #00ff00, #007bff);
-            animation: loading 5s infinite;
+            height: 20px;
+            background-color: #4caf50;
+            animation: progressBarAnimation 3s ease-in-out infinite;
         }
 
-        @keyframes loading {
-            0% { width: 0%; }
-            100% { width: 100%; }
+        @keyframes progressBarAnimation {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 50%;
+            }
+            100% {
+                width: 100%;
+            }
         }
-
     </style>
 </head>
 <body>
@@ -99,8 +93,7 @@
                 <h1>Now Connecting to: SCP-RP UK</h1>
                 <p class="subtext">“Secure. Contain. Protect.”</p>
             </div>
-            <div class="terminal-style">
-                <h2>Civil Networks SCP-RP UK</h2>
+            <div class="loading">
                 <p>Establishing Secure Connection...</p>
                 <div class="loading-bar">
                     <div class="progress"></div>
