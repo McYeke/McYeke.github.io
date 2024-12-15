@@ -63,15 +63,27 @@
             width: 0;
             height: 20px;
             background-color: #4caf50;
-            animation: progressBarAnimation 3s ease-in-out infinite;
+            animation: progressBarAnimation 10s ease-in-out infinite;
         }
 
         @keyframes progressBarAnimation {
             0% {
                 width: 0;
             }
+            5% {
+                width: 5%;
+            }
+            15% {
+                width: 15%;
+            }
+            30% {
+                width: 30%;
+            }
             50% {
                 width: 50%;
+            }
+            75% {
+                width: 75%;
             }
             100% {
                 width: 100%;
